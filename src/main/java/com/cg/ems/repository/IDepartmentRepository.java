@@ -1,8 +1,12 @@
 package com.cg.ems.repository;
 
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
 import com.cg.ems.entities.Department;
 
+@Repository
 public interface IDepartmentRepository {
 	void addDepartment(String dname);
 	List<Department> getAllDepartments();
